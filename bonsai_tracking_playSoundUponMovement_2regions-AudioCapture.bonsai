@@ -56,6 +56,22 @@
               <al:Name>beep</al:Name>
               <al:FileName>Practice-Pad-Buzz-Stroke.wav</al:FileName>
             </al:BufferConfiguration>
+            <al:BufferConfiguration xsi:type="al:SoundBuffer">
+              <al:Name>leaf1</al:Name>
+              <al:FileName>leaf1.wav</al:FileName>
+            </al:BufferConfiguration>
+            <al:BufferConfiguration xsi:type="al:SoundBuffer">
+              <al:Name>leaf-long</al:Name>
+              <al:FileName>leaf-long.wav</al:FileName>
+            </al:BufferConfiguration>
+            <al:BufferConfiguration xsi:type="al:SoundBuffer">
+              <al:Name>white-noise-bandpass</al:Name>
+              <al:FileName>white-noise-bandpass.wav</al:FileName>
+            </al:BufferConfiguration>
+            <al:BufferConfiguration xsi:type="al:SoundBuffer">
+              <al:Name>leaf-steps</al:Name>
+              <al:FileName>leaf-steps.wav</al:FileName>
+            </al:BufferConfiguration>
           </al:Buffers>
           <al:Sources>
             <al:SourceConfiguration>
@@ -85,6 +101,102 @@
             <al:SourceConfiguration>
               <al:Name>beep</al:Name>
               <al:BufferName>beep</al:BufferName>
+              <al:Gain>1</al:Gain>
+              <al:Pitch>1</al:Pitch>
+              <al:Direction>
+                <al:X>0</al:X>
+                <al:Y>0</al:Y>
+                <al:Z>0</al:Z>
+              </al:Direction>
+              <al:Position>
+                <al:X>0</al:X>
+                <al:Y>0</al:Y>
+                <al:Z>0</al:Z>
+              </al:Position>
+              <al:Velocity>
+                <al:X>0</al:X>
+                <al:Y>0</al:Y>
+                <al:Z>0</al:Z>
+              </al:Velocity>
+              <al:Looping>true</al:Looping>
+              <al:Relative>false</al:Relative>
+              <al:State>Initial</al:State>
+            </al:SourceConfiguration>
+            <al:SourceConfiguration>
+              <al:Name>leaf1</al:Name>
+              <al:BufferName>leaf1</al:BufferName>
+              <al:Gain>1</al:Gain>
+              <al:Pitch>1</al:Pitch>
+              <al:Direction>
+                <al:X>0</al:X>
+                <al:Y>0</al:Y>
+                <al:Z>0</al:Z>
+              </al:Direction>
+              <al:Position>
+                <al:X>0</al:X>
+                <al:Y>0</al:Y>
+                <al:Z>0</al:Z>
+              </al:Position>
+              <al:Velocity>
+                <al:X>0</al:X>
+                <al:Y>0</al:Y>
+                <al:Z>0</al:Z>
+              </al:Velocity>
+              <al:Looping>true</al:Looping>
+              <al:Relative>false</al:Relative>
+              <al:State>Initial</al:State>
+            </al:SourceConfiguration>
+            <al:SourceConfiguration>
+              <al:Name>leaf-long</al:Name>
+              <al:BufferName>leaf-long</al:BufferName>
+              <al:Gain>1</al:Gain>
+              <al:Pitch>1</al:Pitch>
+              <al:Direction>
+                <al:X>0</al:X>
+                <al:Y>0</al:Y>
+                <al:Z>0</al:Z>
+              </al:Direction>
+              <al:Position>
+                <al:X>0</al:X>
+                <al:Y>0</al:Y>
+                <al:Z>0</al:Z>
+              </al:Position>
+              <al:Velocity>
+                <al:X>0</al:X>
+                <al:Y>0</al:Y>
+                <al:Z>0</al:Z>
+              </al:Velocity>
+              <al:Looping>true</al:Looping>
+              <al:Relative>false</al:Relative>
+              <al:State>Initial</al:State>
+            </al:SourceConfiguration>
+            <al:SourceConfiguration>
+              <al:Name>leaf-steps</al:Name>
+              <al:BufferName>leaf-steps</al:BufferName>
+              <al:Gain>1</al:Gain>
+              <al:Pitch>1</al:Pitch>
+              <al:Direction>
+                <al:X>0</al:X>
+                <al:Y>0</al:Y>
+                <al:Z>0</al:Z>
+              </al:Direction>
+              <al:Position>
+                <al:X>0</al:X>
+                <al:Y>0</al:Y>
+                <al:Z>0</al:Z>
+              </al:Position>
+              <al:Velocity>
+                <al:X>0</al:X>
+                <al:Y>0</al:Y>
+                <al:Z>0</al:Z>
+              </al:Velocity>
+              <al:Looping>true</al:Looping>
+              <al:Relative>false</al:Relative>
+              <al:State>Initial</al:State>
+            </al:SourceConfiguration>
+            <al:SourceConfiguration>
+              <al:Name>white-noise-bandpass</al:Name>
+              <al:BufferName>white-noise-bandpass</al:BufferName>
               <al:Gain>1</al:Gain>
               <al:Pitch>1</al:Pitch>
               <al:Direction>
@@ -139,7 +251,7 @@
         <Combinator xsi:type="al:PlaySource">
           <al:DeviceName>Generic Software on Line (2- Steinberg UR44C)</al:DeviceName>
           <al:SourceName>
-            <al:string>leaf</al:string>
+            <al:string>white-noise-bandpass</al:string>
           </al:SourceName>
         </Combinator>
       </Expression>
@@ -167,7 +279,7 @@
         <Combinator xsi:type="al:PauseSource">
           <al:DeviceName>Generic Software on Line (2- Steinberg UR44C)</al:DeviceName>
           <al:SourceName>
-            <al:string>leaf</al:string>
+            <al:string>white-noise-bandpass</al:string>
           </al:SourceName>
         </Combinator>
       </Expression>
@@ -175,7 +287,7 @@
         <Combinator xsi:type="al:RewindSource">
           <al:DeviceName>Generic Software on Line (2- Steinberg UR44C)</al:DeviceName>
           <al:SourceName>
-            <al:string>leaf</al:string>
+            <al:string>white-noise-bandpass</al:string>
           </al:SourceName>
         </Combinator>
       </Expression>
@@ -302,7 +414,7 @@
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="IntProperty">
-                <Value>150</Value>
+                <Value>1250</Value>
               </Combinator>
             </Expression>
             <Expression xsi:type="rx:BehaviorSubject">
@@ -310,7 +422,7 @@
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="StringProperty">
-                <Value>data\</Value>
+                <Value>D:\data\</Value>
               </Combinator>
             </Expression>
             <Expression xsi:type="rx:BehaviorSubject">
@@ -445,7 +557,7 @@
             </Expression>
             <Expression xsi:type="Add">
               <Operand xsi:type="TimeSpanProperty">
-                <Value>PT2S</Value>
+                <Value>PT4S</Value>
               </Operand>
             </Expression>
             <Expression xsi:type="rx:ReplaySubject">
@@ -540,30 +652,22 @@
       <Expression xsi:type="rx:PublishSubject">
         <Name>Audio stream</Name>
       </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="SubscribeSubject">
-          <Name>Time trial</Name>
-        </Builder>
+      <Expression xsi:type="SubscribeSubject">
+        <Name>Time trial</Name>
       </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="PropertyMapping">
-          <PropertyMappings>
-            <Property Name="DueTime" />
-          </PropertyMappings>
-        </Builder>
+      <Expression xsi:type="PropertyMapping">
+        <PropertyMappings>
+          <Property Name="DueTime" />
+        </PropertyMappings>
       </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="Combinator">
-          <Combinator xsi:type="rx:Timer">
-            <rx:DueTime>PT10M2S</rx:DueTime>
-            <rx:Period>PT10H</rx:Period>
-          </Combinator>
-        </Builder>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="rx:Timer">
+          <rx:DueTime>PT10M4S</rx:DueTime>
+          <rx:Period>PT10H</rx:Period>
+        </Combinator>
       </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="Combinator">
-          <Combinator xsi:type="rx:TakeUntil" />
-        </Builder>
+      <Expression xsi:type="Combinator">
+        <Combinator xsi:type="rx:TakeUntil" />
       </Expression>
       <Expression xsi:type="SubscribeSubject">
         <Name>Audio stream</Name>
@@ -586,7 +690,7 @@
         </PropertyMappings>
       </Expression>
       <Expression xsi:type="io:CsvWriter">
-        <io:FileName>data\20240123_125441_mic.csv</io:FileName>
+        <io:FileName>D:\data\20240312_173654_mic.csv</io:FileName>
         <io:Append>false</io:Append>
         <io:Overwrite>false</io:Overwrite>
         <io:Suffix>None</io:Suffix>
@@ -603,7 +707,7 @@
       </Expression>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="rx:Timer">
-          <rx:DueTime>PT10M2S</rx:DueTime>
+          <rx:DueTime>PT10M4S</rx:DueTime>
           <rx:Period>PT10H</rx:Period>
         </Combinator>
       </Expression>
@@ -617,7 +721,7 @@
       </Expression>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="al:AudioWriter">
-          <al:FileName>data\20240123_125441_mic.wav</al:FileName>
+          <al:FileName>D:\data\20240312_173654_mic.wav</al:FileName>
           <al:Suffix>None</al:Suffix>
           <al:Buffered>true</al:Buffered>
           <al:Overwrite>false</al:Overwrite>
@@ -713,7 +817,7 @@
             </Expression>
             <Expression xsi:type="Combinator">
               <Combinator xsi:type="rx:Timer">
-                <rx:DueTime>PT9.967S</rx:DueTime>
+                <rx:DueTime>PT9M59.967S</rx:DueTime>
                 <rx:Period>PT10H</rx:Period>
               </Combinator>
             </Expression>
@@ -820,7 +924,7 @@
       </Expression>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="drw:AddText">
-          <drw:Text>302</drw:Text>
+          <drw:Text>84</drw:Text>
           <drw:Alignment>Near</drw:Alignment>
           <drw:LineAlignment>Near</drw:LineAlignment>
           <drw:TextRenderingHint>AntiAliasGridFit</drw:TextRenderingHint>
@@ -842,7 +946,7 @@
       </Expression>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="cv:VideoWriter">
-          <cv:FileName>data\20240123_125441_cam1.avi</cv:FileName>
+          <cv:FileName>D:\data\20240312_173654_cam1.avi</cv:FileName>
           <cv:Suffix>None</cv:Suffix>
           <cv:Buffered>true</cv:Buffered>
           <cv:Overwrite>false</cv:Overwrite>
@@ -893,20 +997,24 @@
         <scr:Expression>new(Item2 as Timestamp_camera_clock_us, Item1 as Timestamp_bonsai_clock_s, Item3 as FrameID)</scr:Expression>
       </Expression>
       <Expression xsi:type="io:CsvWriter">
-        <io:FileName>data\20240123_125441_cam1.csv</io:FileName>
+        <io:FileName>D:\data\20240312_173654_cam1.csv</io:FileName>
         <io:Append>false</io:Append>
         <io:Overwrite>false</io:Overwrite>
         <io:Suffix>None</io:Suffix>
         <io:IncludeHeader>true</io:IncludeHeader>
         <io:Selector>Timestamp_camera_clock_us,Timestamp_bonsai_clock_s,FrameID</io:Selector>
       </Expression>
-      <Expression xsi:type="SubscribeSubject">
-        <Name>ThreshGrayValue</Name>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="SubscribeSubject">
+          <Name>ThreshGrayValue</Name>
+        </Builder>
       </Expression>
-      <Expression xsi:type="PropertyMapping">
-        <PropertyMappings>
-          <Property Name="ThresholdValue" />
-        </PropertyMappings>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="PropertyMapping">
+          <PropertyMappings>
+            <Property Name="ThresholdValue" />
+          </PropertyMappings>
+        </Builder>
       </Expression>
       <Expression xsi:type="Disable">
         <Builder xsi:type="SubscribeSubject">
@@ -1013,30 +1121,38 @@
           </Combinator>
         </Builder>
       </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="cv:Threshold">
-          <cv:ThresholdValue>56</cv:ThresholdValue>
-          <cv:MaxValue>255</cv:MaxValue>
-          <cv:ThresholdType>BinaryInv</cv:ThresholdType>
-        </Combinator>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="cv:Threshold">
+            <cv:ThresholdValue>56</cv:ThresholdValue>
+            <cv:MaxValue>255</cv:MaxValue>
+            <cv:ThresholdType>BinaryInv</cv:ThresholdType>
+          </Combinator>
+        </Builder>
       </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="cv:FindContours">
-          <cv:Mode>External</cv:Mode>
-          <cv:Method>ChainApproxNone</cv:Method>
-          <cv:Offset>
-            <cv:X>0</cv:X>
-            <cv:Y>0</cv:Y>
-          </cv:Offset>
-          <cv:MinArea>500</cv:MinArea>
-          <cv:MaxArea>6000</cv:MaxArea>
-        </Combinator>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="cv:FindContours">
+            <cv:Mode>External</cv:Mode>
+            <cv:Method>ChainApproxNone</cv:Method>
+            <cv:Offset>
+              <cv:X>0</cv:X>
+              <cv:Y>0</cv:Y>
+            </cv:Offset>
+            <cv:MinArea>500</cv:MinArea>
+            <cv:MaxArea>6000</cv:MaxArea>
+          </Combinator>
+        </Builder>
       </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="cv:BinaryRegionAnalysis" />
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="cv:BinaryRegionAnalysis" />
+        </Builder>
       </Expression>
-      <Expression xsi:type="Combinator">
-        <Combinator xsi:type="cv:LargestBinaryRegion" />
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="Combinator">
+          <Combinator xsi:type="cv:LargestBinaryRegion" />
+        </Builder>
       </Expression>
       <Expression xsi:type="Disable">
         <Builder xsi:type="MemberSelector">
@@ -1053,49 +1169,57 @@
           <io:Selector>Item1,Item2,Item3,Item4,Item5,Item6</io:Selector>
         </Builder>
       </Expression>
-      <Expression xsi:type="MemberSelector">
-        <Selector>Centroid</Selector>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="MemberSelector">
+          <Selector>Centroid</Selector>
+        </Builder>
       </Expression>
-      <Expression xsi:type="rx:Defer">
-        <Name>Velocity</Name>
-        <Workflow>
-          <Nodes>
-            <Expression xsi:type="WorkflowInput">
-              <Name>Source1</Name>
-            </Expression>
-            <Expression xsi:type="Combinator">
-              <Combinator xsi:type="rx:Skip">
-                <rx:Count>1</rx:Count>
-              </Combinator>
-            </Expression>
-            <Expression xsi:type="Combinator">
-              <Combinator xsi:type="rx:Zip" />
-            </Expression>
-            <Expression xsi:type="ipy:PythonTransform">
-              <ipy:Name>Euclidean Distance</ipy:Name>
-              <ipy:Script>import math 
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="rx:Defer">
+          <Name>Velocity</Name>
+          <Workflow>
+            <Nodes>
+              <Expression xsi:type="WorkflowInput">
+                <Name>Source1</Name>
+              </Expression>
+              <Expression xsi:type="Combinator">
+                <Combinator xsi:type="rx:Skip">
+                  <rx:Count>1</rx:Count>
+                </Combinator>
+              </Expression>
+              <Expression xsi:type="Combinator">
+                <Combinator xsi:type="rx:Zip" />
+              </Expression>
+              <Expression xsi:type="ipy:PythonTransform">
+                <ipy:Name>Euclidean Distance</ipy:Name>
+                <ipy:Script>import math 
 @returns(float)
 def process(value):
   dx = value.Item1.X-value.Item2.X
   dy = value.Item1.Y-value.Item2.Y
   return math.hypot(dx, dy)</ipy:Script>
-            </Expression>
-            <Expression xsi:type="WorkflowOutput" />
-          </Nodes>
-          <Edges>
-            <Edge From="0" To="1" Label="Source1" />
-            <Edge From="0" To="2" Label="Source1" />
-            <Edge From="1" To="2" Label="Source2" />
-            <Edge From="2" To="3" Label="Source1" />
-            <Edge From="3" To="4" Label="Source1" />
-          </Edges>
-        </Workflow>
+              </Expression>
+              <Expression xsi:type="WorkflowOutput" />
+            </Nodes>
+            <Edges>
+              <Edge From="0" To="1" Label="Source1" />
+              <Edge From="0" To="2" Label="Source1" />
+              <Edge From="1" To="2" Label="Source2" />
+              <Edge From="2" To="3" Label="Source1" />
+              <Edge From="3" To="4" Label="Source1" />
+            </Edges>
+          </Workflow>
+        </Builder>
       </Expression>
-      <Expression xsi:type="rx:BehaviorSubject">
-        <Name>VelCentroid_roi1</Name>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="rx:BehaviorSubject">
+          <Name>VelCentroid_roi1</Name>
+        </Builder>
       </Expression>
-      <Expression xsi:type="MemberSelector">
-        <Selector>Area</Selector>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="MemberSelector">
+          <Selector>Area</Selector>
+        </Builder>
       </Expression>
       <Expression xsi:type="Disable">
         <Builder xsi:type="Combinator">
@@ -1358,8 +1482,10 @@ def process(value):
           <Name>FrameDiff_nrPixels_roi2</Name>
         </Builder>
       </Expression>
-      <Expression xsi:type="SubscribeSubject">
-        <Name>VelCentroid_roi1</Name>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="SubscribeSubject">
+          <Name>VelCentroid_roi1</Name>
+        </Builder>
       </Expression>
       <Expression xsi:type="Disable">
         <Builder xsi:type="GroupWorkflow">
@@ -1403,55 +1529,59 @@ def process(value):
           </Workflow>
         </Builder>
       </Expression>
-      <Expression xsi:type="GroupWorkflow">
-        <Name>Moving median</Name>
-        <Workflow>
-          <Nodes>
-            <Expression xsi:type="WorkflowInput">
-              <Name>Source1</Name>
-            </Expression>
-            <Expression xsi:type="Combinator">
-              <Combinator xsi:type="rx:WindowCount">
-                <rx:Count>5</rx:Count>
-                <rx:Skip>1</rx:Skip>
-              </Combinator>
-            </Expression>
-            <Expression xsi:type="rx:SelectMany">
-              <Description />
-              <Workflow>
-                <Nodes>
-                  <Expression xsi:type="WorkflowInput">
-                    <Name>Source1</Name>
-                  </Expression>
-                  <Expression xsi:type="Combinator">
-                    <Combinator xsi:type="rx:ToList" />
-                  </Expression>
-                  <Expression xsi:type="ipy:PythonTransform">
-                    <ipy:Script>@returns(float)
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="GroupWorkflow">
+          <Name>Moving median</Name>
+          <Workflow>
+            <Nodes>
+              <Expression xsi:type="WorkflowInput">
+                <Name>Source1</Name>
+              </Expression>
+              <Expression xsi:type="Combinator">
+                <Combinator xsi:type="rx:WindowCount">
+                  <rx:Count>5</rx:Count>
+                  <rx:Skip>1</rx:Skip>
+                </Combinator>
+              </Expression>
+              <Expression xsi:type="rx:SelectMany">
+                <Description />
+                <Workflow>
+                  <Nodes>
+                    <Expression xsi:type="WorkflowInput">
+                      <Name>Source1</Name>
+                    </Expression>
+                    <Expression xsi:type="Combinator">
+                      <Combinator xsi:type="rx:ToList" />
+                    </Expression>
+                    <Expression xsi:type="ipy:PythonTransform">
+                      <ipy:Script>@returns(float)
 def process(value):
   sort = sorted(value)
   return sort[len(sort)/2]</ipy:Script>
-                  </Expression>
-                  <Expression xsi:type="WorkflowOutput" />
-                </Nodes>
-                <Edges>
-                  <Edge From="0" To="1" Label="Source1" />
-                  <Edge From="1" To="2" Label="Source1" />
-                  <Edge From="2" To="3" Label="Source1" />
-                </Edges>
-              </Workflow>
-            </Expression>
-            <Expression xsi:type="WorkflowOutput" />
-          </Nodes>
-          <Edges>
-            <Edge From="0" To="1" Label="Source1" />
-            <Edge From="1" To="2" Label="Source1" />
-            <Edge From="2" To="3" Label="Source1" />
-          </Edges>
-        </Workflow>
+                    </Expression>
+                    <Expression xsi:type="WorkflowOutput" />
+                  </Nodes>
+                  <Edges>
+                    <Edge From="0" To="1" Label="Source1" />
+                    <Edge From="1" To="2" Label="Source1" />
+                    <Edge From="2" To="3" Label="Source1" />
+                  </Edges>
+                </Workflow>
+              </Expression>
+              <Expression xsi:type="WorkflowOutput" />
+            </Nodes>
+            <Edges>
+              <Edge From="0" To="1" Label="Source1" />
+              <Edge From="1" To="2" Label="Source1" />
+              <Edge From="2" To="3" Label="Source1" />
+            </Edges>
+          </Workflow>
+        </Builder>
       </Expression>
-      <Expression xsi:type="rx:BehaviorSubject">
-        <Name>VelCentroid_filt_roi1</Name>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="rx:BehaviorSubject">
+          <Name>VelCentroid_filt_roi1</Name>
+        </Builder>
       </Expression>
       <Expression xsi:type="SubscribeSubject">
         <Name>FrameDiff_nrPixels_roi1</Name>
@@ -1703,22 +1833,22 @@ def process(value):
           <Property Name="Value" />
         </PropertyMappings>
       </Expression>
-      <Expression xsi:type="GreaterThan">
-        <Operand xsi:type="IntProperty">
-          <Value>150</Value>
-        </Operand>
+      <Expression xsi:type="Disable">
+        <Builder xsi:type="GreaterThan">
+          <Operand xsi:type="IntProperty">
+            <Value>1250</Value>
+          </Operand>
+        </Builder>
       </Expression>
       <Expression xsi:type="PropertyMapping">
         <PropertyMappings>
           <Property Name="Value" />
         </PropertyMappings>
       </Expression>
-      <Expression xsi:type="Disable">
-        <Builder xsi:type="LessThan">
-          <Operand xsi:type="DoubleProperty">
-            <Value>150</Value>
-          </Operand>
-        </Builder>
+      <Expression xsi:type="LessThan">
+        <Operand xsi:type="DoubleProperty">
+          <Value>1250</Value>
+        </Operand>
       </Expression>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="rx:DistinctUntilChanged" />
@@ -1957,7 +2087,7 @@ def process(value):
       </Expression>
       <Expression xsi:type="Combinator">
         <Combinator xsi:type="rx:Delay">
-          <rx:DueTime>PT0.5S</rx:DueTime>
+          <rx:DueTime>PT1S</rx:DueTime>
         </Combinator>
       </Expression>
       <Expression xsi:type="WorkflowOutput" />
